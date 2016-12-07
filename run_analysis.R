@@ -17,3 +17,5 @@ str(dataActivityTrain)
 tidyData <- createTidyData(meanAndStd)
 write.table(tidyData, paste0(folder,"/tidyData.txt"),row.name=FALSE)
 tidyData
+library(knitr)
+knit2html("codebook.Rmd")
